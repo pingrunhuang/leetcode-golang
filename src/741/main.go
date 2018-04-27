@@ -152,8 +152,6 @@ func main() {
 	}
 	// cherryPickup2(case1)
 	copyCase1 := copyMatrix(case1)
-	fmt.Printf("%p\n", &copyCase1)
-	fmt.Printf("%p\n", &case1)
 
 	copyCase1[0][0] = 12
 	fmt.Println(case1)
