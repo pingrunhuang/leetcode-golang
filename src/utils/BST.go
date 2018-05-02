@@ -2,27 +2,27 @@ package utils
 
 import "fmt"
 
-type Tree struct {
+type TreeNode struct {
 	Val   int
-	Left  *Tree
-	Right *Tree
+	Left  *TreeNode
+	Right *TreeNode
 }
 
-func (root *Tree) Insert(val int) *Tree {
+func (root *TreeNode) Insert(val int) *TreeNode {
 	if root == nil {
-		root = &Tree{Val: val, Left: nil, Right: nil}
+		root = &TreeNode{Val: val, Left: nil, Right: nil}
 		return root
 	}
 	switch {
 	case val < root.Val:
 		if root.Left == nil {
-			root.Left = &Tree{Val: val, Left: nil, Right: nil}
+			root.Left = &TreeNode{Val: val, Left: nil, Right: nil}
 			return root
 		}
 		root.Left.Insert(val)
 	case val > root.Val:
 		if root.Right == nil {
-			root.Right = &Tree{Val: val, Left: nil, Right: nil}
+			root.Right = &TreeNode{Val: val, Left: nil, Right: nil}
 			return root
 		}
 		root.Right.Insert(val)
@@ -30,13 +30,13 @@ func (root *Tree) Insert(val int) *Tree {
 	return root
 }
 
-func (root *Tree) BFSView() {
+func (root *TreeNode) BFSView() {
 	if root == nil {
 		return
 	}
 	curLast := root
 	nextLast := root
-	queue := make([]*Tree, 0)
+	queue := make([]*TreeNode, 0)
 	queue = append(queue, root)
 	for len(queue) != 0 {
 		cur := queue[0]
