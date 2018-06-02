@@ -1,8 +1,4 @@
-package main
-
-import (
-	"fmt"
-)
+package leetcode
 
 func twoSum(nums []int, target int) []int {
 	for i := 0; i < len(nums)-1; i++ {
@@ -13,11 +9,4 @@ func twoSum(nums []int, target int) []int {
 		}
 	}
 	return nil
-}
-
-func main() {
-	a := []int{2, 7, 11, 15}
-	b := 9
-	result := twoSum(a, b)
-	fmt.Println(result)
 }

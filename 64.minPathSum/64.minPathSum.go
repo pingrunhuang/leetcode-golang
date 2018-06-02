@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package leetcode
 
 // DP
 // Minimum Path Sum
@@ -38,24 +36,4 @@ func minPathSum(grid [][]int) int {
 		}
 	}
 	return sum[rows-1][cols-1]
-}
-
-//
-func Launch64() {
-	// how to make 2d matrix in golang
-	test1 := [][]int{
-		[]int{1, 3, 1},
-		[]int{1, 5, 1},
-		[]int{4, 2, 1},
-	}
-	result1 := minPathSum(test1)
-	if result1 == 7 {
-		fmt.Printf("Test case 1 passed\n")
-	} else {
-		fmt.Printf("Test case 1 failed\n")
-	}
-}
-
-func main() {
-
 }

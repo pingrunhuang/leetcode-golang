@@ -1,5 +1,6 @@
-package utils
+package leetcode
 
+// Queue is the queue
 type Queue struct {
 	queue []int
 	size  int

@@ -1,4 +1,4 @@
-package utils
+package leetcode
 
 import (
 	"testing"
@@ -7,7 +7,7 @@ import (
 func TestBSTInsert(*testing.T) {
 	arr := []int{9, 2, 3, 4, 6, 78, 76, 80, 4, 3, 5}
 	// null tree
-	var tree *Tree
+	var tree *TreeNode
 	for _, v := range arr {
 		tree = tree.Insert(v)
 	}
@@ -15,6 +15,6 @@ func TestBSTInsert(*testing.T) {
 }
 
 func TestBFSView(*testing.T) {
-	root := Tree{Val: 8, Left: &Tree{4, &Tree{1, nil, nil}, nil}, Right: &Tree{11, &Tree{10, nil, nil}, &Tree{100, nil, nil}}}
+	root := TreeNode{Val: 8, Left: &TreeNode{4, &TreeNode{1, nil, nil}, nil}, Right: &TreeNode{11, &TreeNode{10, nil, nil}, &TreeNode{100, nil, nil}}}
 	root.BFSView()
 }

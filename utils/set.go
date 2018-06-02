@@ -1,4 +1,4 @@
-package utils
+package leetcode
 
 //NewSet
 func NewSet(arr []int) []int {

@@ -1,9 +1,9 @@
-package main
+package leetcode
 
 import (
 	"math"
 
-	"github.com/pingrunhuang/leetcode-golang/src/utils"
+	utils "github.com/pingrunhuang/leetcode-golang/utils"
 )
 
 /**
@@ -17,13 +17,6 @@ import (
  * }
  */
 
-type TreeNode = utils.TreeNode
-
-// type pair struct {
-// 	key int
-// 	val int
-// }
-
 // a slice of pair that implements the sort interface so that you can use the sort function
 // type pairList []pair
 
@@ -32,6 +25,8 @@ type TreeNode = utils.TreeNode
 // func (p pairList) Less(i, j int) bool { return p[i].val < p[j].val }
 
 // func (p pairList) Len() int { return len(p) }
+
+type TreeNode = utils.TreeNode
 
 func dfs(node *TreeNode, mapper map[int]int) {
 
@@ -61,8 +56,4 @@ func findMode(root *TreeNode) []int {
 		}
 	}
 	return result
-}
-
-func main() {
-
 }
