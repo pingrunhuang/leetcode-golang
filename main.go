@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+// this code is not meant for production, just some random go code testing
+
 func main() {
 	t1 := &[]string{"aaaaa"}
 	t2 := "ddd"
