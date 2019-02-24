@@ -1,4 +1,4 @@
-package leetcode
+package utils
 
 // Queue is the queue
 type Queue struct {

@@ -9,3 +9,6 @@ Such a pattern expands to all package directories found in the GOPATH trees with
 As a special case, x/... matches x as well as x's subdirectories.
 For example, net/... expands to net and packages in its subdirectories.
 ```
+
+# How to run individual test?
+`go test -test.run=TestMinimumTotal ./src/120` for example. To see the `fmt.Println` result inside the method, use `-test.v`

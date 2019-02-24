@@ -1,6 +1,6 @@
-package leetcode
+package utils
 
-//NewSet
+// NewSet
 func NewSet(arr []int) []int {
 	m := make(map[int]bool)
 	result := make([]int, 0, len(arr))
