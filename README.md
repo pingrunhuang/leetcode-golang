@@ -1,3 +1,6 @@
+# Summary
+Golang is great, leetcode is awesome. Learning Golang by solve interesting algorithms in leetcode is such a geek way to go!!
+
 * put this package inside your GOPATH
 
 * in order to run all tests the sub directory, you will need to use command `go test ./...` from the root directory of this project. 
