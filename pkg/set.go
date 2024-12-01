@@ -1,4 +1,4 @@
-package pgk
+package pkg
 
 // NewSet
 func NewSet(arr []int) []int {

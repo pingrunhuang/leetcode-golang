@@ -2,8 +2,6 @@ package trees
 
 import (
 	"math"
-
-	utils "leetcode-golang/pkg"
 )
 
 /**
@@ -26,9 +24,7 @@ import (
 
 // func (p pairList) Len() int { return len(p) }
 
-type TreeNode = utils.TreeNode
-
-func dfs(node *utils.TreeNode, mapper map[int]int) {
+func dfs(node *TreeNode, mapper map[int]int) {
 
 	if node != nil {
 		mapper[node.Val]++
@@ -41,7 +37,7 @@ func dfs(node *utils.TreeNode, mapper map[int]int) {
 	}
 }
 
-func findMode(root *utils.TreeNode) []int {
+func findMode(root *TreeNode) []int {
 	mapper := make(map[int]int)
 	result := make([]int, 0)
 	dfs(root, mapper)

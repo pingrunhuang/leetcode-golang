@@ -26,11 +26,14 @@ leetcode-golang/
 ```
 
 ## How to run all test?
-
+run all tests recursively
+```bash
+go test ./...
+```
 
 ## How to run the specific test?
 use `go test` to run unit test for specific test of solution. 
 For example:
-```golang
+```bash
 go test ./solutions/arrays -run TwoSumTest
 ```

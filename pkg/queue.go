@@ -1,4 +1,4 @@
-package pgk
+package pkg
 
 // Queue is the queue
 type Queue struct {

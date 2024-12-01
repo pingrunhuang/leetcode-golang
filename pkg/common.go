@@ -1,4 +1,4 @@
-package pgk
+package pkg
 
 func reverseString(s string) string {
 	runes := []rune(s)

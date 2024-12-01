@@ -1,4 +1,4 @@
-package pgk
+package pkg
 
 import "fmt"
 
@@ -8,6 +8,13 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
+/*
+Assume a BST is defined as follows:
+
+1. The left subtree of a node contains only nodes with keys less than or equal to the node's key.
+2. The right subtree of a node contains only nodes with keys greater than or equal to the node's key.
+3. Both the left and right subtrees must also be binary search trees.
+*/
 func (root *TreeNode) Insert(val int) *TreeNode {
 	if root == nil {
 		root = &TreeNode{Val: val, Left: nil, Right: nil}
@@ -56,4 +63,15 @@ func (root *TreeNode) BFSView() {
 		}
 	}
 	fmt.Println()
+}
+
+func GenerateTree(values []int) *TreeNode {
+	if len(values) == 1 {
+		return &TreeNode{values[0], nil, nil}
+	}
+	var root *TreeNode
+	for val := range values[1:] {
+		root.Insert(val)
+	}
+	return root
 }

@@ -1,1 +1,1 @@
-package pgk
+package pkg

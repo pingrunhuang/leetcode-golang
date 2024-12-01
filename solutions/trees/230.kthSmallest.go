@@ -1,9 +1,5 @@
 package trees
 
-/*
-230.
-*/
-
 func getNodes(curNode *TreeNode) int {
 	if curNode == nil {
 		return 0
